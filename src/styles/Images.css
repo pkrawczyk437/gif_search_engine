@@ -1,0 +1,31 @@
+.container {
+  min-height: 100vh;
+  background-color: #333;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 25vh;
+}
+
+input {
+  padding: 8px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.giphy-images {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+}
+
+.gif-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 25%;
+  margin: 8px;
+}
