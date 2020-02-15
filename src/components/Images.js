@@ -5,7 +5,7 @@ import Search from './Search'
 
 class Images extends Component {
    state = {
-     trendingGifs: []
+     trendingGifs: [],
    }
 
   componentDidMount() {
@@ -13,11 +13,11 @@ class Images extends Component {
        limit: 6,
        rating: 'g',
        fmt: 'json'
-     }).then(({data})=> this.setState(
+     }).then(({data}) => this.setState(
        {
          trendingGifs: data,
-       }
-      ))
+       })
+      )
   }
 
   filterImages = value => {
@@ -38,8 +38,8 @@ class Images extends Component {
       <div className="container">
         <Search filterImages={this.filterImages}/>
         <div className="giphy-images">
-          {Object.keys(this.state.trendingGifs).map((key, index) => (
-            <div key={index} className="gif-cards">
+          {Object.keys(this.state.trendingGifs).map(key => (
+            <div key={this.state.trendingGifs[key].id} className="gif-cards">
               <img src={this.state.trendingGifs[key].images.fixed_height.url} alt="gif"/>
             </div>
             ))}

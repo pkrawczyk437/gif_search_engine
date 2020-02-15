@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 
 class Search extends Component {
-  state = {
-    searchedData: ""
-  }
-
   handleChange = event => {
     const { target: { value } } = event
     const { filterImages } = this.props
