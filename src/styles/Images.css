@@ -1,4 +1,9 @@
-.container {
+/* .container {
+  min-height: 100vh;
+  background-color: #333;
+} */
+
+.root {
   min-height: 100vh;
   background-color: #333;
 }
@@ -28,4 +33,10 @@ input {
   justify-content: center;
   flex: 25%;
   margin: 8px;
+}
+
+.gif-cards img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }

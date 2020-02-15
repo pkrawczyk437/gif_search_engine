@@ -35,7 +35,7 @@ class Images extends Component {
 
   render() {
     return (
-      <div className="container">
+      <>
         <Search filterImages={this.filterImages}/>
         <div className="giphy-images">
           {Object.keys(this.state.trendingGifs).map(key => (
@@ -44,7 +44,7 @@ class Images extends Component {
             </div>
             ))}
         </div>
-      </div>
+      </>
     )
   }
 }
