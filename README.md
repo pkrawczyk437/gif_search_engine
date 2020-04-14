@@ -6,5 +6,4 @@ Gif search created in react.js with use of giphy api
 If you want to test this app, you must download it on your laptop/pc
 and then write "npm install" to download required packages (giphy-api library)
 
-Live demo:
-giphyapi-search.netlify.com
+
